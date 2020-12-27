@@ -10,10 +10,8 @@ class Node{
 
 void displayList(Node *node){
 	while(node != NULL){
-		cout << "Data = ";
 		cout << node->data;
-		node = node->next; 
-		cout << endl;
+		node = node->next;
 	}
 }
 
@@ -49,7 +47,6 @@ int main(){
 			cin >> _data;
 			appendNode(&head, _data);
 		}	
-		displayList(head);
 	}
-	//displayList(head);
+	displayList(head);
 }
